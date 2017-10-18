@@ -7,3 +7,9 @@
 <p><%= @portfolio_item.body %></p>
 
 <%= link_to "Edit", edit_portfolio_path(@portfolio_item.id) %>
+
+<h2>Technologies Used:</h2>
+
+<% @portfolio_item.technologies.each do |t| %>
+	<p><%= t.name %></p>
+	<% end %>
