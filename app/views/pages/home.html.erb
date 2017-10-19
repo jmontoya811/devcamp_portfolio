@@ -1,10 +1,11 @@
-<h1>Home Page</h1>
-<p>Find me in app</p>
+<h1>Hello, <%= current_user.first_name if current_user %></h1>
+<p>Find me in app/views/pages/home.html.erb</p>
 <h2>Devcamp Portfolio</h2>
 
 <h1>Posts</h1>
-<p>Find me in app/views/pages/home.html.erg</p>
+<p>Find me in app/views/pages/home.html.erb</p>
 <%= @posts.inspect %>
 
 <h2>Skills</h2>
 <%= @skills.inspect %>
+
