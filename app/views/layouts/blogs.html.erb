@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> <%= @page_title %> </title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
@@ -14,18 +14,9 @@
   	<p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
-       <% if current_user.is_a?(User) %>
+       <%= login_helper %>
 
-       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-              
-       <% else %>
-       
-       <%= link_to "Register", new_user_registration_path %>
-       <%= link_to "Login", new_user_session_path  %>
-
-       <% end %>
-
-    <%= yield %>
+      <%= yield %>
 
       <%= render "shared/nav", location: 'bottom' %>
 
