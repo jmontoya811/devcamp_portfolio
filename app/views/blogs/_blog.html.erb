@@ -1,4 +1,4 @@
-  <tr>
+  <div>
     <td><%= blog.title.upcase %></td>
     <td><%= blog.created_at %></td>
     <td><%= blog.body %></td>
@@ -6,4 +6,4 @@
     <td><%= link_to 'Show', blog %></td>
     <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
     <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  </div>
