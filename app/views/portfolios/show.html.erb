@@ -6,7 +6,7 @@
 
 <p><%= @portfolio_item.body %></p>
 
-<%= link_to "Edit", edit_portfolio_path(@portfolio_item.id) %>
+<%= link_to "Edit", edit_portfolio_path(@portfolio_item.id) if logged_in?(:site_admin) %>
 
 <h2>Technologies Used:</h2>
 
