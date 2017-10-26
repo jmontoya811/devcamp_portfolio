@@ -164,9 +164,15 @@ body {
 /*
  * custom card
  */
-
+.card {
+  padding: 1%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
  .card-block {
  color: black;
+ padding: 5%;
  background-color: purple;
  text-align: left;
  }
@@ -179,3 +185,12 @@ body {
   text-align: right;
   font-color: #ffc107;
 }
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  background-color: blue;
+}
+
