@@ -6,8 +6,7 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -21,18 +20,19 @@
 
         <div class="cover-container">
   	
-           <%= render "shared/application_nav" %>
+                  <%= render "shared/application_nav" %>
 
-            <%= login_helper %>
+                  
+                  <%= yield %> 
 
-            <%= yield %>
-        
-            <%= source_helper %>
-            <%= copyright_generator %>
+                  <%= render "shared/application_footer" %>
+
+                  <%= source_helper 'application' %>
+         
 
           </div>
         </div>
-      </div>
+     </div>
 
 
   </body>
