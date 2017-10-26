@@ -14,23 +14,14 @@
   <body>
 
 <!-- start of nav -->
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">New features</a>
-          <a class="nav-link" href="#">Press</a>
-          <a class="nav-link" href="#">New hires</a>
-          <a class="nav-link" href="#">About</a>
-        </nav>
-      </div>
-    </div>
+    <%= render 'shared/blog_nav' %>
     <!-- End of nav -->
     <!-- Start of blog Header -->
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <h1 class="blog-title">The Boots</h1>
+        <p class="lead blog-description">An example</p>
+        <%= link_to 'New blog', new_blog_path if logged_in?(:site_admin) %>
       </div>
     </div>
 
@@ -42,10 +33,10 @@
     <!-- End Container -->
 
 
-                  <%= render "shared/application_nav" %>
+             <%= yield %>     
 
                   
-                  <%= yield %> 
+                   
 <!-- /.blog-sidebar -->
 
                   <div class="col-sm-3 offset-sm-1 blog-sidebar">
@@ -93,12 +84,11 @@
 
                   <%= render "shared/application_footer" %>
 
-                  <%= source_helper 'application' %>
+                  <%= source_helper(@blog) %>
          
           </div>
         </div>
      </div>
-
 
   </body>
 </html>
