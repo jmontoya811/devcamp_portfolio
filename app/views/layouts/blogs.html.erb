@@ -13,44 +13,22 @@
 
   <body>
 
-<!-- start of nav -->
     <%= render 'shared/blog_nav' %>
-    <!-- End of nav -->
-    <!-- Start of blog Header -->
-    <div class="blog-header">
-      <div class="container">
-        <h1 class="blog-title">The Boots</h1>
-        <p class="lead blog-description">An example</p>
-        <%= link_to 'Write New blog', new_blog_path if logged_in?(:site_admin) %>
-      </div>
-    </div>
-
-    <!-- End of Header -->
-    <!-- Container -->
+    
+    <%= render 'shared/blog_masthead' %>
+   
     <div class="container">
 
       <div class="row">
-    <!-- End Container -->
 
              <%= yield %>     
 
                  <%= render 'shared/blog_sidebar' %>
-
-          <footer class="blog-footer">
-            <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            <p>
-              <a href="#">Back to top</a>
-            </p>
-          </footer>
-        <!-- /.blog-footer-end -->
-
-                  <%= render "shared/application_footer" %>
+      </div>
+                  <%= render "shared/blog_footer" %>
 
                   <%= source_helper("blog") %>
-         
-          </div>
-        </div>
-     </div>
-
+           
+    </div>
   </body>
 </html>

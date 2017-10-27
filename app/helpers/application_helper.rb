@@ -20,6 +20,6 @@ module ApplicationHelper
 end
 
 def copyright_generator
-	DevViewTool::Renderer.copyright 'Jordan M', 'All rights reserved'
+	DevViewTool::Renderer.copyright '&copy; Jordan M', 'All rights reserved'
 	end
 end
