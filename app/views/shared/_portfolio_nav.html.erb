@@ -1,0 +1,42 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+<nav id="topNav" class="navbar navbar-dark navbar-fixed-top">
+    <div class="container">
+      <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand pull-right" href="#">Portfolios</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Jordan's Accident☰
+      <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          
+            <li><%= link_to "Home", root_path, class: "text-red" %></li>
+                    <li><%= link_to "About Me", about_path, class: "text-black" %></li>
+                    <li><%= link_to "Contact", contact_path, class: "text-black" %></li>
+                    <li><%= link_to "Blogs", blogs_path, class: "text-black" %></li>
+                    <li><%= link_to "Portfolio", portfolios_path, class: "text-black" %></li>
+                    <li><%= login_helper "text-black"  %></li>
+          </ul>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+  <!--/.container-fluid -->
+</nav>
+
+<!-- \/ code goes between 7/8 -->
+<!-- <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
