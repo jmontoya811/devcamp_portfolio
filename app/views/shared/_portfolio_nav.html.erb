@@ -5,29 +5,25 @@
 
 <nav id="topNav" nav class="navbar navbar-light bg-faded rounded mb-3">
     <div class="container">
-      <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand pull-right" href="#">Portfolios</a>
+     
+      <a class="navbar-brand pull-right" href="#"><div class="w3-panel w3-pink">
+  <h2 class="w3-opacity">Portfolio</h2>
+</div></a>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Jordan's Accident☰
       <span class="caret"></span></a>
           <ul class="dropdown-menu">
           
-            <li><%= link_to "Home", root_path, class: "text-red" %></li>
-                    <li><%= link_to "About Me", about_path, class: "text-black" %></li>
-                    <li><%= link_to "Contact", contact_path, class: "text-black" %></li>
-                    <li><%= link_to "Blogs", blogs_path, class: "text-black" %></li>
-                    <li><%= link_to "Portfolio", portfolios_path, class: "text-black" %></li>
+            <li><<%= nav_helper 'nav-link', 'span' %></li>
+                    
                     <li><%= login_helper "text-black"  %></li>
           </ul>
       </ul>
     </div>
+    
     <!--/.nav-collapse -->
   </div>
   <!--/.container-fluid -->
@@ -40,3 +36,40 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button> -->
+
+      <nav class="navbar navbar-light bg-faded rounded mb-3">
+
+        <a class="navbar-brand pull-right" href="#">Portfolios</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-toggleable-md" id="navbarCollapse">
+            <ul class="nav navbar-nav text-md-center justify-content-md-between">
+              <li class="nav-item active">
+          
+              
+                <a class="nav-link" href="#"><li><%= link_to "Home", root_path, class: "text-red" %></li></a>
+              </li>
+             
+                <a class="nav-link" href="#"><li><%= link_to "About Me", about_path, class: "text-black" %></li></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><li><%= link_to "Contact", contact_path, class: "text-black" %></li></a>
+              </li>
+              
+                <a class="nav-link" href="#"><li><%= link_to "Blogs", blogs_path, class: "text-black" %></li></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#"><%= link_to "Blogs", blogs_path, class: "text-black" %>
+                    
+                    </a>
+                  <a class="dropdown-item" href="#"><%= link_to "Portfolio", portfolios_path, class: "text-black" %></a>
+                  <a class="dropdown-item" href="#"><%= login_helper "text-black"  %></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
