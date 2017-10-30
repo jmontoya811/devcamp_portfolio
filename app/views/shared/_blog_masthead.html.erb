@@ -1,0 +1,7 @@
+<div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">The Boots</h1>
+        <p class="lead blog-description">An example</p>
+        <%= link_to 'Write New blog', new_blog_path if logged_in?(:site_admin) %>
+    </div>
+</div>
