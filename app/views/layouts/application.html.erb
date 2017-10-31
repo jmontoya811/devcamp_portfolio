@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> <%= @page_title %> </title>
-    <%= csrf_meta_tags %>
+<head>
+  <title> <%= @page_title %> </title>
+  <%= csrf_meta_tags %>
 
-    <meta name="keywords" content="<%= @seo_keywords %>" />
+  <meta name="keywords" content="<%= @seo_keywords %>" />
 
-  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
 
-  <body>
+ <div class="site-wrapper">
 
-     <div class="site-wrapper">
+    <div class="site-wrapper-inner">
 
-      <div class="site-wrapper-inner">
+      <div class="cover-container">
 
-        <div class="cover-container">
-  	
-                  <%= render "shared/application_nav" %>
+      <div id="background">
+      </div>
 
-                  
-                  <%= yield %> 
+        <%= render "shared/application_nav" %>
 
-                  <%= render "shared/application_footer" %>
+        <%= yield %> 
 
-                  <%= source_helper 'application' %>
-         
+        <%= render "shared/application_footer" %>
 
-          </div>
-        </div>
-     </div>
-
-
-  </body>
+        <%= source_helper 'application' %>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
