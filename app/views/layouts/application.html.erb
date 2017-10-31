@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> <%= @page_title %> </title>
-    <%= csrf_meta_tags %>
+<head>
+  <title> <%= @page_title %> </title>
+  <%= csrf_meta_tags %>
 
-    <meta name="keywords" content="<%= @seo_keywords %>" />
+  <meta name="keywords" content="<%= @seo_keywords %>" />
 
-  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
 
-  <body>
+ <div class="site-wrapper">
 
-     <div class="site-wrapper">
+    <div class="site-wrapper-inner">
 
-      <div class="site-wrapper-inner">
+      <div class="cover-container">
 
-        <div class="cover-container">
-  	
-                  <%= render "shared/application_nav" %>
+     
+<%= video_tag(
+  'HardDrivePhotojpeg.mp4',
+  id: 'background',
+  autoplay: true,
+  loop: true,
+  muted: true,
+  poster: 'img_0646.jpg'
+  )
+ %>
+        <%= render "shared/application_nav" %>
 
-                  
-                  <%= yield %> 
+        <%= yield %> 
 
-                  <%= render "shared/application_footer" %>
+        <%= render "shared/application_footer" %>
 
-                  <%= source_helper 'application' %>
-         
-
-          </div>
-        </div>
-     </div>
-
-
-  </body>
+        <%= source_helper 'application' %>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
