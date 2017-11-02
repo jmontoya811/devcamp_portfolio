@@ -40,6 +40,9 @@ module ApplicationHelper
 				},{
 				url: contact_path,
 				title: 'Contact'
+				},{
+				url: tech_news_path,
+				title: 'News/Tweets'
 				}
 			]
 	end
