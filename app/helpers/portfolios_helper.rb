@@ -13,4 +13,3 @@ module PortfoliosHelper
         end
     end
 end
-
