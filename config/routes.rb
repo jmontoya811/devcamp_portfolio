@@ -10,7 +10,7 @@ end
   get 'about', to: 'pages#about'
 
   get 'contact', to: 'pages#contact'
-
+  get 'tech-news', to: 'pages#tech_news'
   get 'guides/book'
   
   resources :blogs do
