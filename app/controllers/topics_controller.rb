@@ -1,4 +1,5 @@
 class TopicsController < ApplicationController
+	before_action :set_sidebar_topics
 	layout 'blogs'
   def index
   	@topics = Topic.all
@@ -12,5 +13,11 @@ class TopicsController < ApplicationController
   	else
   		@blogs = @topic.blogs.publish.recent.page(params[:page]).per(5)
     end
+  end
+
+  private
+
+  def set_sidebar_topics
+  	@side_bar_topics = Topic.with_blogs
   end
 end
