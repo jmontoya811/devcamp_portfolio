@@ -25,7 +25,7 @@ body {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Days One', sans-serif;
   color: #555;
 }
 
@@ -35,9 +35,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
+  font-family: 'Days One', sans-serif;
 }
 
 
@@ -191,10 +189,20 @@ h6, .h6 {
 
  .comment-card > .card {
  margin-top: 20px;
- padding-right: 20px;
+ margin-left: 25px;
+ margin-right: 25px;
  }
 
  .comment-attribution {
  font-size: .8em;
  font-style: italic;
+ }
+
+ .blogcrumb {
+ font-size: 2em;
+ margin: 0px 10px 0px 10px;
+ }
+ 
+ .blog-sidebar-source {
+   margin-top: 20px;
  }

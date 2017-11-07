@@ -6,6 +6,13 @@
  *= require jquery-ui
  */
 
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+
+
 .navbar {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7),to(#eee));
   background-image: -webkit-linear-gradient(top, #f7f7f7 0%,#eee 100%);
@@ -63,9 +70,18 @@
   background-color: #f7f7f7;
 }
 
+h1, .h1,
+ h2, .h2,
+ h3, .h3,
+ h4, .h4,
+ h5, .h5,
+ h6, .h6 {
+   font-family: 'Roboto Slab', serif;
+ }
+
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;

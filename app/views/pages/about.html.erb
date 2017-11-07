@@ -1,13 +1,86 @@
-<div class="row">
-    <div class="col-md-4">
-        <img src="">
-        <%= image_tag "IMG_0275.jpg", width: 300, alt: "profile image"%>
-    </div>
-    <div class="col-md-8">
+
+<div class="app-card-container">
+    <div class="card">
     <h1>About</h1>
-        <p>New to Developing and coding, not so new to skateboarding and snowboarding. Traveling, music, art.</p>
-        <hr>
-        <h2>Devcamp Portfolio</h2>
-        <p>Where young jedi come to hone their skills...</p>
+    <hr>
+        <div class="row">
+            <div class="col-md-6">
+                
+                <%= image_tag "IMG_0275.jpg", width: 350, height: 300, alt: "profile image", class: "profile-img" %>
+                       
+            </div>
+            <div class="col-md-6">
+
+            
+            
+                <p>New to Developing and coding, not so new to skateboarding and snowboarding. Traveling, music, art.</p>
+                <hr>
+                <h2>Devcamp Portfolio</h2>
+                <p>Where young jedi come to hone their skills...</p>
+                <hr>
+             <button class= "btn btn-outline-secondary" data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
+
+
+  <button class= "btn btn-outline-secondary" data-toggle="collapse" data-target="#jobHistory">
+    Job History
+  </button>
+
+  <div id="jobHistory" class="collapse">
+    <div class="card card-block">
+      Knife River Construction, Pipe Layer (2.5 years)<br>
+      Lift Operator at Canyons Ski Resort and Powder Mountain
     </div>
+   </div>
+
+  
+  <button
+    class= "btn btn-outline-secondary"
+    type="button"
+    data-toggle="collapse"
+    data-target="#education"
+    aria-expanded="false"
+    aria-controller="education"
+  >
+    Education
+  </button>
+
+
+
+  <div class="collapse" id="education" >
+    <div class="card card-block" >
+      UVU 
+    </div>
+    <div class="card card-block" >
+      Bottega Tech
+    </div>
+  </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="column"><div class="skills">
+                                        <% @skills.each do |skill| %>
+
+                                        <div class="skill">
+                          <h4><%= skill.title %></h4>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-striped bg-warning"
+                              role="progressbar"
+                              aria-valuenow="<%= skill.percent_utilized %>"
+                              aria-valuemax="100"
+                              style="width: <%= skill.percent_utilized %>%">
+                            </div>
+                          </div>
+                      </div>
+                        <% end %>
+                    </div>
+                </div>
+    </div>   
 </div>

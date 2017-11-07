@@ -1,6 +1,11 @@
 @import "bootstrap";
 @import "gritter";
 
+@font-face {
+  font-family: 'Press Start 2P';
+  src:font-url('Press_Start_2P.ttf');
+}
+
 /*
  * Globals
  */
@@ -28,14 +33,26 @@ a:hover {
  * Base structure
  */
 
+
+
 html,
 body {
   height: 100%;
 }
 body {
   color: #fff;
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Press Start 2P', cursive;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -118,6 +135,9 @@ body {
   font-weight: bold;
 }
 
+.inner-cover > .cover-heading {
+  margin-top: 15%;
+}
 
 /*
  * Footer
@@ -176,6 +196,7 @@ body {
  padding: 5%;
  background-color: purple;
  text-align: left;
+ border: 1px solid grey;
  }
 
 .auth-links a {
@@ -235,4 +256,33 @@ padding: 10px;
 .tech-news a {
 color: green;
 }
+
+.app-card-container {
+  color: black;
+  text-align: right;
+
+}
+
+.app-card-container > .card {
+  padding: 25px;
+}
+
+.profile-img {
+  border: 2px solid grey;
+  box-shadow: -13px -13px 20px 0px black;
+}
+
+.app-card-container a {
+  color: blueviolet;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
 
