@@ -72,5 +72,13 @@ puts "3 Technologies created"
 
 User.create!(name:"Test lastname", email:'test@test.com', password:"asdf123", password_confirmation:"asdf123", roles:'site_admin')
 
+User.create!(
+  email: "test1@test.com",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "Regular User",
+)
+
+puts "1 regular & 1 admin user created"
 
 
