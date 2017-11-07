@@ -236,3 +236,21 @@ padding: 10px;
 color: green;
 }
 
+.app-card-container {
+  color: black;
+  text-align: right;
+
+}
+
+.app-card-container > .card {
+  padding: 25px;
+}
+
+.profile-img {
+  border: 2px solid grey;
+  box-shadow: -13px -13px 20px 0px black;
+}
+
+.app-card-container a {
+  color: blueviolet;
+}

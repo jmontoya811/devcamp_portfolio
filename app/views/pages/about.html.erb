@@ -1,13 +1,21 @@
-<div class="row">
-    <div class="col-md-4">
-        <img src="">
-        <%= image_tag "IMG_0275.jpg", width: 300, alt: "profile image"%>
-    </div>
-    <div class="col-md-8">
+
+<div class="app-card-container">
+    <div class="card">
     <h1>About</h1>
-        <p>New to Developing and coding, not so new to skateboarding and snowboarding. Traveling, music, art.</p>
-        <hr>
-        <h2>Devcamp Portfolio</h2>
-        <p>Where young jedi come to hone their skills...</p>
-    </div>
+    <hr>
+        <div class="row">
+            <div class="col-md-6">
+                
+                <%= image_tag "IMG_0275.jpg", width: 350, height: 300, alt: "profile image", class: "profile-img" %>
+            </div>
+            <div class="col-md-6">
+            
+                <p>New to Developing and coding, not so new to skateboarding and snowboarding. Traveling, music, art.</p>
+                <hr>
+                <h2>Devcamp Portfolio</h2>
+                <p>Where young jedi come to hone their skills...</p>
+            </div>
+        </div>
+    </div>   
 </div>
+    
