@@ -9,13 +9,42 @@
                 <%= image_tag "IMG_0275.jpg", width: 350, height: 300, alt: "profile image", class: "profile-img" %>
             </div>
             <div class="col-md-6">
+
+            <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
             
                 <p>New to Developing and coding, not so new to skateboarding and snowboarding. Traveling, music, art.</p>
                 <hr>
                 <h2>Devcamp Portfolio</h2>
                 <p>Where young jedi come to hone their skills...</p>
+                <hr>
+                <p>
+  <button
+    class= "btn btn-primary"
+    type="button"
+    data-toggle="collapse"
+    data-target="jobHistory"
+    aria-expanded="false"
+    aria-controler="jobHistory"
+  >
+    Job History
+  </button>
+</p>
+
+<p>
+  <div class="collapse" id="jobHistory" >
+    <div class="card card-block" >
+      Job 1
+    </div>
+    <div class="card card-block" >
+      Job 2
+    </div>
+  </div>
+</p>
             </div>
         </div>
     </div>   
 </div>
-    

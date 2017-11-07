@@ -5,9 +5,11 @@
   <%= csrf_meta_tags %>
 
   <meta name="keywords" content="<%= @seo_keywords %>" />
- <%=  favicon_link_tag 'Faviconji.png'%>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+   <%=  favicon_link_tag 'Faviconji.png'%>
 </head>
 
 <body>
@@ -24,8 +26,7 @@
   id: 'background',
   autoplay: true,
   loop: true,
-  muted: true,
-  poster: 'img_0646.jpg'
+  muted: true
   )
  %>
         <%= render "shared/application_nav" %>
