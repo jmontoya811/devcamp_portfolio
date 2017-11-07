@@ -1,6 +1,11 @@
 @import "bootstrap";
 @import "gritter";
 
+@font-face {
+  font-family: 'Press Start 2P';
+  src:font-url('Press_Start_2P.ttf');
+}
+
 /*
  * Globals
  */
@@ -28,14 +33,26 @@ a:hover {
  * Base structure
  */
 
+
+
 html,
 body {
   height: 100%;
 }
 body {
   color: #fff;
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Press Start 2P', cursive;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -265,3 +282,4 @@ color: green;
    margin-top: 10px;
    margin-bottom: 10px;
  }
+
