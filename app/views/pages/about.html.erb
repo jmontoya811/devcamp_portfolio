@@ -21,30 +21,46 @@ Lorem ipsum dolor text....
                 <h2>Devcamp Portfolio</h2>
                 <p>Where young jedi come to hone their skills...</p>
                 <hr>
-                <p>
-  <button
+             
+  <button data-toggle="collapse" data-target="#jobHistory">
+    Job History
+  </button>
+
+  <div id="jobHistory" class="collapse">
+    <div class="card card-block">
+      Job 1<br>
+      Job 2
+    </div>
+   </div>
+
+
+
+            </div>
+        </div>
+
+<button
     class= "btn btn-primary"
     type="button"
     data-toggle="collapse"
-    data-target="jobHistory"
+    data-target="education"
     aria-expanded="false"
-    aria-controler="jobHistory"
+    aria-controler="education"
   >
-    Job History
+    Education
   </button>
-</p>
 
-<p>
-  <div class="collapse" id="jobHistory" >
+  <div id="education" class="collapse">
     <div class="card card-block" >
-      Job 1
+      School 1
     </div>
     <div class="card card-block" >
-      Job 2
+      School 2
+    </div>
+    <div class="card card-block" >
+      School 3
     </div>
   </div>
-</p>
-            </div>
-        </div>
+
+
     </div>   
 </div>
